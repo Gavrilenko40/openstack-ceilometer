@@ -1,0 +1,29 @@
+---
+     - name: "openstack-ceilometer-collector install"
+       yum:
+         name: "openstack-ceilometer-collector"
+         state: "latest"
+         update_cache: "yes"
+       tags: 
+         - "openstack-ceilometer-collector install"
+     - name: "openstack-ceilometer-notification install"
+       yum:
+         name: "openstack-ceilometer-notification"
+         state: "latest"
+         update_cache: "yes"
+       tags: 
+         - "openstack-ceilometer-notification install"         
+     - name: "openstack-ceilometer-central install"
+       yum:
+         name: "openstack-ceilometer-central"
+         state: "latest"
+         update_cache: "yes"
+       tags: 
+         - "openstack-ceilometer-central install"
+     - name: "python-ceilometerclient install"
+       yum:
+         name: "python-ceilometerclient"
+         state: "latest"
+         update_cache: "yes"
+       tags: 
+         - "python-ceilometerclient install"

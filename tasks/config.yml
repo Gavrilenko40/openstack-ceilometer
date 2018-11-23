@@ -1,0 +1,7 @@
+---
+ - name: "generate config nova-compute"
+   template: src="templates/etc/nova/{{ item }}.j2" dest="/etc/nova/{{ item }} mode=0700"
+   with_items:
+           - "nova.conf"
+   tags: 
+     - "openstack nova-compute configfile create"

@@ -1,0 +1,5 @@
+# test start
+- hosts: "host1"
+  remote_user: "stack"
+  roles:
+  - "openstack-ceilometer"
