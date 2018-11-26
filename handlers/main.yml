@@ -1,0 +1,14 @@
+---
+ - name: "openstack-ceilometer-notification start"
+   service:
+      name: "openstack-ceilometer-notification"
+      state: started
+   tags:
+     - "openstack-ceilometer-notification start"
+
+ - name: "openstack-ceilometer-notification restart"
+   service:
+     name: "openstack-ceilometer-notification"
+     state: restarted
+   tags:
+     - "openstack-ceilometer-notification restart"
