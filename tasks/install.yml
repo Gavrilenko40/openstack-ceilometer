@@ -1,4 +1,11 @@
 ---
+     - name: "openstack-ceilomter-compute install"
+       yum:
+         name: "openstack-ceilometer-compute"
+         state: "latest"
+         update_cache: "yes"
+       tags: 
+         - "openstack ceilometer-compute install"
      - name: "openstack-ceilometer-collector install"
        yum:
          name: "openstack-ceilometer-collector"
