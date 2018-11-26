@@ -1,2 +1,77 @@
 ---
+ #[DEFAULT]
+ 
+ http_timeout: 600
+ debug: "False"
+ log_dir: "/var/log/ceilometer"
+ transport_url: "rabbit://guest:guest@10.123.84.21:5672/"
+ polling_namespaces: "central,compute,ipmi"
+ 
+ #[compute]
   
+ #[coordination]
+ 
+ backend_url: "redis://10.123.84.21:6379"
+ 
+ #[event]
+ 
+ #[hardware]
+ 
+ #[ipmi]
+ 
+ #[matchmaker_redis]
+ 
+ #[meter]
+ 
+ #[notification]
+ 
+ ack_on_event_error: "True"
+ #[oslo_concurrency]
+ 
+ #[oslo_messaging_amqp]
+ 
+ #[oslo_messaging_kafka]
+ 
+ #[oslo_messaging_notifications]
+ 
+ topics: "notifications"
+ 
+ #[oslo_messaging_rabbit]
+ 
+ ssl: "False"
+ 
+ #[oslo_messaging_zmq]
+ 
+ #[polling]
+ 
+ #[publisher]
+ 
+ telemetry_secret: "1f3c014f96a14e6c"
+ #[publisher_notifier]
+ 
+ #[rgw_admin_credentials]
+ 
+ #[rgw_client]
+ 
+ #[service_credentials]
+ auth_type: "password"
+ auth_url: "http://10.123.84.21:5000/"
+ project_name: "services"
+ project_domain_name: "Default"
+ username: "ceilometer"
+ user_domain_name: "Default"
+ password: "ed7e27d7bca14237"
+ region_name: "RegionOne"
+ #[service_types]
+ #[vmware]
+ #[xenapi]
+ #[keystone_authtoken]
+ www_authenticate_uri: "http://10.123.84.21:5000/v3"
+ auth_uri: "http://10.123.84.21:5000/v3"
+ auth_type: "password"
+ auth_url: "http://10.123.84.21:35357"
+ username: "ceilometer"
+ password: "ed7e27d7bca14237"
+ user_domain_name: "Default"
+ project_name: "services"
+ project_domain_name: "Default"
