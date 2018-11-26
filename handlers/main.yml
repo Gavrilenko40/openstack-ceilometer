@@ -4,11 +4,22 @@
       name: "openstack-ceilometer-notification"
       state: started
    tags:
-     - "openstack-ceilometer-notification start"
-
+     - "openstack-ceilometer-notification start" 
  - name: "openstack-ceilometer-notification restart"
    service:
      name: "openstack-ceilometer-notification"
      state: restarted
    tags:
      - "openstack-ceilometer-notification restart"
+ - name: "openstack-ceilometer-central start"
+   service:
+     name: "openstack-ceilometer-central"
+     state: started
+			tags:
+     - "openstack-ceilometer-central start"
+ - name: "openstack-ceilometer-central restart"
+   service:
+     name: "openstack-ceilometer-central"
+     state: restarted
+   tags:
+     - "openstack-ceilometer-central restart"
