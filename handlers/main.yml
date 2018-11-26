@@ -15,7 +15,7 @@
    service:
      name: "openstack-ceilometer-central"
      state: started
-			tags:
+   tags:
      - "openstack-ceilometer-central start"
  - name: "openstack-ceilometer-central restart"
    service:
