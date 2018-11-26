@@ -1,7 +1,7 @@
 ---
- - name: "generate config nova-compute"
-   template: src="templates/etc/nova/{{ item }}.j2" dest="/etc/nova/{{ item }} mode=0700"
+ - name: "generate config ceilometer"
+   template: src="templates/etc/ceilometer/{{ item }}.j2" dest="/etc/ceilometer/{{ item }} mode=0700"
    with_items:
-           - "nova.conf"
+           - "ceilometer.conf"
    tags: 
-     - "openstack nova-compute configfile create"
+     - "openstack ceilometer file configuration create"
