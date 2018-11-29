@@ -1,6 +1,6 @@
 ---
  - name: "generate config ceilometer"
-   template: src="templates/etc/ceilometer/{{ item }}.j2" dest="/etc/ceilometer/{{ item }} mode=0700"
+   template: src="templates/etc/ceilometer/{{ item }}.j2" dest="/etc/ceilometer/{{ item }}" mode=0700
    with_items:
            - "ceilometer.conf"
    tags: 
